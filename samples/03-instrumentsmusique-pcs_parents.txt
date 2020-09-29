@@ -1,0 +1,12 @@
+Élèves du Conservatoire Supérieur de Musique de Paris selon l'instument joué et la PCS des parents	 Agriculteur exploitant	 Artisan Commerçant Patron	 Cadre, prof. intelectuelle	 Profession Intermédiaire	 Employés	 Ouvrier	 Non-réponse
+ Violon	2	17	69	15	24	12	7
+ Violon Alto	0	10	18	7	11	8	4
+ Cello	1	11	32	12	16	6	2
+ Corde Basse	0	7	16	1	6	9	6
+ Clarinette	0	7	10	5	8	10	0
+ Hautbois	2	4	8	7	6	8	0
+ Bois Basse	1	6	6	5	12	8	7
+ Flûte	0	2	20	6	2	7	1
+ Trompette	3	15	11	10	22	21	5
+ Cor	1	2	9	8	8	12	4
+ Tuba Trombone	5	11	12	6	20	27	8
