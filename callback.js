@@ -281,6 +281,14 @@ function deleteSelectedObject() {
 	}
 }
 
+const hrefs = {
+	'en': 'help/userguide.pdf',
+	'es': 'help/userguide.pdf',
+	'fr': 'help/guide-utilisateur.pdf',
+	'ru': 'help/userguide.pdf',
+	'vi': 'help/userguide.pdf'
+};
+
 function setLanguage(lang) {
 	jQuery.i18n.properties({
 		name: 'Messages', 
@@ -297,7 +305,9 @@ function setLanguage(lang) {
 				$(this).attr('src', 'icon/blank.png');
 			});
 			$('#image_' + lang).attr('src', 'icon/check.png');
-
+			
+			//update userguide file
+			$('#menu_help_userguide_href').attr('href', hrefs[lang]);
 			
 			if (language != lang) {
 				language = lang;
