@@ -53,6 +53,24 @@
 			loadData('samples/' + language + '/' + sample);
 		}
 		
+		function doCopy() {
+			try {
+				if (!document.execCommand("copy"))
+					alert(message_copy);
+			} catch {
+				alert("Error in copying");
+			}
+		}
+		
+		function doPaste() {
+			try {
+				if (!document.execCommand("paste"))
+					alert(message_paste);
+			} catch {
+				alert("Error in pasting");
+			}
+		}
+		
 		function init() {
 			language = $.cookie('language') || 'en';
 			
@@ -90,6 +108,7 @@
 				}
 				table.remove_hc();
 				doLayout(window.innerWidth * 0.8, window.innerHeight * 0.8);
+				event.preventDefault();
 			}
 			
 			document.oncopy = function(event) {
@@ -271,12 +290,12 @@
 
 					<div class="dropdown-divider"></div>
 
-        	  		<a class="dropdown-item" href="javascript:alert('Please use Ctrl/Cmd +  C');">
+        	  		<a class="dropdown-item" href="javascript:doCopy();">
 			        	<img src="icon/copy.png" style="width:16px;"/>
         	  			<span class="translatable" id="menu_edit_copyTable">Copy Table</span>
         	  		</a>
 
-			        <a class="dropdown-item" href="javascript:alert(message_paste);">
+			        <a class="dropdown-item" href="javascript:doPaste();">
 			        	<img src="icon/paste.png" style="width:16px;"/>
 				        <span class="translatable" id="menu_edit_paste">Paste</span>
 					</a>
