@@ -50,6 +50,11 @@
 			
 					//update userguide file
 					$('#menu_help_userguide_href').attr('href', hrefs[lang]);
+					
+					if (lang != 'en' && lang != 'fr')
+						$('#submenu').show();
+					else
+						$('#submenu').hide();
 			
 					if (language != lang) {
 						language = lang;
@@ -101,6 +106,15 @@
 					<span class="translatable" id="menu_help_userguide" style="font-family: Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">User Guide</span>
 				</div>
 			</a>
+		</div>
+		<div id="submenu">
+			<table>
+				<tr>
+					<td><a href="help/userguide.pdf" target="_blank"><span class="translatable" id="index_english">English</span></a></td>
+
+					<td><a href="help/guide-utilisateur.pdf" target="_blank"><span class="translatable" id="index_french">French</span></a></td>
+				</tr>
+			</table>
 		</div>
 
 

@@ -286,6 +286,7 @@ const hrefs = {
 	'es': 'help/userguide.pdf',
 	'fr': 'help/guide-utilisateur.pdf',
 	'ru': 'help/userguide.pdf',
+	'uk': 'help/userguide.pdf',
 	'vi': 'help/userguide.pdf'
 };
 
