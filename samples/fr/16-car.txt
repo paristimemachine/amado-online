@@ -1,4 +1,4 @@
-Cars (Tenenhaus 2004)	Capacity cm3	Power Hp	Speed Km/h	Weight Kg	Width cm	Length cm
+Voitures (Tenenhaus 2004)	Cylindrée	Puissance	Vitesse	Poids	Largeur	Longueur
 Citroën C2 1.1 Base	1124	61	158	932	1659	3666
 Smart Fortwo Coupé	698	52	135	730	1515	2500
 Mini 1.6 170	1598	170	218	1215	1690	3625

@@ -76,10 +76,10 @@
   </head>
   
   
-<body onload="init()" style='margin:0;'>
+<body onload="init()" style='margin:0;font-family: Arial, Helvetica, sans-serif;font-size:14"'>
 	<center>
-		<p style="padding-top:50px"><img src="icon/amado-logo.png"></p>
-		<table border="0" style="font-family: Arial, Helvetica, sans-serif;font-size:14">
+		<p><img src="icon/amado-logo.png"></p>
+		<table border="0">
 			<tr>
 				<th><a href="javascript:setLanguage('en');"><img src="icon/en.png"></a></th>
 				<th><a href="javascript:setLanguage('fr');"><img src="icon/fr.png"></a></th>
@@ -98,15 +98,16 @@
 			</tr>
 		</table>
 		
-		<div style="position:relative;margin-top:18px;text-align:center;width:200px">
+		<div style="position:relative;margin-top:10px;text-align:center;width:200px">
 			<a id="menu_help_userguide_href" href="" target="_blank">
-				<img src="icon/userguide.png">
+				<img src="icon/userguide.png?12112020">
 
 				<div style="position:absolute;top:50%;left:62%;transform:translate(-50%,-50%);width:75%">
-					<span class="translatable" id="menu_help_userguide" style="font-family: Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">User Guide</span>
+					<span class="translatable" id="menu_help_userguide" style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">User Guide</span>
 				</div>
 			</a>
 		</div>
+
 		<div id="submenu">
 			<table>
 				<tr>
@@ -117,14 +118,20 @@
 			</table>
 		</div>
 
-
 		<div style="position:relative;margin-top:10px;text-align:center;width:200px">
 			<a target="_self" href="main.html">
-				<img src="icon/start.png?1234" style="width:200px;">
+				<img src="icon/start.png?12112020" style="width:200px;">
 				<div style="position:absolute;top:50%;left:62%;transform:translate(-50%,-50%);width:75%">
-					<span class="translatable" id="index_start" style="font-family: Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">Start</span>
+					<span class="translatable" id="index_start" style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">Start</span>
 				</div>
 			</a>
+		</div>
+		
+		<div style="position:relative;margin-top:10px">
+			<video width="320" height="240" controls>
+				<source src="video/amado.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
 		</div>
 
 	</center>
