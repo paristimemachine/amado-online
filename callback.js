@@ -285,6 +285,7 @@ const hrefs = {
 	'en': 'help/en-userguide.pdf',
 	'es': 'help/en-userguide.pdf',
 	'fr': 'help/fr-userguide.pdf',
+	'it': 'help/en-userguide.pdf',
 	'ru': 'help/en-userguide.pdf',
 	'uk': 'help/en-userguide.pdf',
 	'vi': 'help/en-userguide.pdf'
