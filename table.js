@@ -4,10 +4,10 @@ Table.prototype.swapRows = function(i, j) {
 		this.setValue(i, k, this.value(j, k));
 		this.setValue(j, k, temp);
 		
-		temp = this.row_info[i];
-		this.row_info[i] = this.row_info[j];
-		this.row_info[j] = temp;
 	}
+	temp = this.row_info[i];
+	this.row_info[i] = this.row_info[j];
+	this.row_info[j] = temp;
 }
 
 
@@ -45,10 +45,10 @@ Table.prototype.swapColumns = function(i, j) {
 		this.setValue(k, i, this.value(k, j));
 		this.setValue(k, j, temp);
 		
-		temp = this.col_info[i];
-		this.col_info[i] = this.col_info[j];
-		this.col_info[j] = temp;
 	}
+	temp = this.col_info[i];
+	this.col_info[i] = this.col_info[j];
+	this.col_info[j] = temp;
 }
 
 Table.prototype.trieLigne = function(numeroLigne, bAtoZ) {
