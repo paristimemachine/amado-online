@@ -282,13 +282,13 @@ function deleteSelectedObject() {
 }
 
 const hrefs = {
-	'en': 'help/en-userguide.pdf',
-	'es': 'help/en-userguide.pdf',
-	'fr': 'help/fr-userguide.pdf',
-	'it': 'help/en-userguide.pdf',
-	'ru': 'help/en-userguide.pdf',
-	'uk': 'help/en-userguide.pdf',
-	'vi': 'help/en-userguide.pdf'
+	'en': 'help/EN-AMADO-UserGuide-8janv2021.pdf',
+	'es': 'help/Fr-Guide-AMADO-8janv2021.pdf',
+	'fr': 'help/Fr-Guide-AMADO-8janv2021.pdf',
+	'it': 'help/Fr-Guide-AMADO-8janv2021.pdf',
+	'ru': 'help/Fr-Guide-AMADO-8janv2021.pdf',
+	'uk': 'help/Fr-Guide-AMADO-8janv2021.pdf',
+	'vi': 'help/EN-AMADO-UserGuide-8janv2021.pdf'
 };
 
 function setLanguage(lang) {
