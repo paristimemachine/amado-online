@@ -1,0 +1,5 @@
+Snee.1974 The Am. Statistician Volume 28	Black hair	Brunette hair	Red hair	Blond hair
+Brown eye	68	119	26	7
+Blue eye	20	84	17	94
+Hazel eye	15	54	14	10
+Green eye	5	29	14	16
