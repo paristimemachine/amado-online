@@ -50,7 +50,7 @@
 		}
 		
 		function loadSample(sample) {
-			loadData('samples/' + language + '/' + sample);
+			loadData('samples/' + sample);
 		}
 		
 		function doCopy() {
@@ -93,7 +93,10 @@
 			table.rowLegendFontSize = 18;
 			table.columnLegendFontSize = 18;
 
-			loadSample('06-paris.txt');
+			if (language == 'en')
+				loadSample('en06-paris.txt');
+			else
+				loadSample('fr06-paris.txt');
 
 			$(window).resize(function() {
 				doLayout(window.innerWidth * 0.8, window.innerHeight * 0.8);
@@ -216,29 +219,56 @@
 							<span class="translatable" id="menu_file_samples">Samples</span>
 						</a>
 			          	<div class="dropdown-menu">
-							<a class="dropdown-item" href="javascript:loadSample('01-deportation.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr01-deportation.txt');">
 								<span class="translatable" id="menu_file_01">01</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('02-egyptian.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr02-egyptian.txt');">
 								<span class="translatable" id="menu_file_02">02.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('03-enquete.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr03-enquete.txt');">
 								<span class="translatable" id="menu_file_03">03.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('04-instruments.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr04-instruments.txt');">
 								<span class="translatable" id="menu_file_04">04.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('05-marketing.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr05-marketing.txt');">
 								<span class="translatable" id="menu_file_05">05.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('06-paris.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr06-paris.txt');">
 								<span class="translatable" id="menu_file_06">06.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('07-voitures.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr07-voitures.txt');">
 								<span class="translatable" id="menu_file_07">07.</span>
 							</a>
-							<a class="dropdown-item" href="javascript:loadSample('08-yeux.txt');">
+							<a class="dropdown-item" href="javascript:loadSample('fr08-yeux.txt');">
 								<span class="translatable" id="menu_file_08">08.</span>
+							</a>
+							
+							<div class="dropdown-divider"></div>
+
+							<a class="dropdown-item" href="javascript:loadSample('en01-deportation.txt');">
+								<span class="translatable" id="menu_file_11">11</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en02-egyptian.txt');">
+								<span class="translatable" id="menu_file_12">12.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en03-enquete.txt');">
+								<span class="translatable" id="menu_file_13">13.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en04-instruments.txt');">
+								<span class="translatable" id="menu_file_14">14.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en05-marketing.txt');">
+								<span class="translatable" id="menu_file_15">15.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en06-paris.txt');">
+								<span class="translatable" id="menu_file_16">16.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en07-voitures.txt');">
+								<span class="translatable" id="menu_file_17">17.</span>
+							</a>
+							<a class="dropdown-item" href="javascript:loadSample('en08-yeux.txt');">
+								<span class="translatable" id="menu_file_18">18.</span>
 							</a>
 			        	</div>
 		  			</div>
