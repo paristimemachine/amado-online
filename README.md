@@ -1,4 +1,4 @@
-# AMADO Online Version 2.0 2020/01/13
+# AMADO Online Version 2.0 2021/01/13
 # An online version of "Analyse graphique d'une MAtrice de DOnnées"
 # Nguyen-Khang PHAM, Can Tho University, Viet Nam
 # pnkhang@ctu.edu.vn
