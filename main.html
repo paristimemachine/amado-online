@@ -26,8 +26,8 @@
 
 
 	<script src="lib/numeric-1.2.6.min.js?20200925"></script>
-	<script src="main.js?20200925"></script>
-	<script src="table.js?20201215"></script>
+	<script src="main.js?20210326"></script>
+	<script src="table.js?20210326"></script>
 	<script src="table-export.js?20200925"></script>
 	<script src="hc.js?20200925"></script>
 	<script src="hc-export.js?20200925"></script>
@@ -49,8 +49,9 @@
 			});
 		}
 		
-		function loadSample(sample) {
+		function loadSample(sample) {		
 			loadData('samples/' + sample);
+			_paq.push(['trackEvent', 'Data', 'Loading', 'Load ' + sample]);
 		}
 		
 		function doCopy() {
@@ -114,6 +115,8 @@
 				table.remove_hc();
 				doLayout(window.innerWidth * 0.8, window.innerHeight * 0.8);
 				event.preventDefault();
+				
+				_paq.push(['trackEvent', 'Data', 'Loading', 'Paste from the clipboard']);
 			}
 			
 			document.oncopy = function(event) {
@@ -191,7 +194,23 @@
 		}
 	</script>
 
-    <!-- Custom styles for this template -->
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//paris-timemachine.huma-num.fr/matomo/";
+    
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    
   </head>
   
   

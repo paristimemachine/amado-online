@@ -1911,7 +1911,11 @@ function Table(row, col) {
 		//alert(s);
 
 		this.sort(Z, W);
-		this.refresh();		
+		this.refresh();	
+		
+		
+		//tracking
+		_paq.push(['trackEvent', 'Data', 'Processing', 'PCA']);			
 	};
 	
 	this.nnpca = function() {
@@ -2004,6 +2008,9 @@ function Table(row, col) {
 
 		this.sort(Z, W);	
 		this.refresh();	
+
+		//tracking
+		_paq.push(['trackEvent', 'Data', 'Processing', 'Normalized PCA']);		
 	};
 	
 	
@@ -2094,6 +2101,9 @@ function Table(row, col) {
 		}
 		this.sort(Z, W);
 		this.refresh();	
+
+		//tracking
+		_paq.push(['trackEvent', 'Data', 'Processing', 'Correspondence Analysis']);
 	};
 	
 
@@ -2149,6 +2159,9 @@ function Table(row, col) {
 		pushUndoAction(new SetTableAction(this));
 		this.hcExecute(type);
 		this.refresh();
+		
+		//tracking
+		_paq.push(['trackEvent', 'Data', 'Processing', 'HCA']);
 	};
 	
 	this.hcExecute = function(type) {

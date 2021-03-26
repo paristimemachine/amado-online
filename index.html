@@ -36,8 +36,13 @@
 			'vi': 'help/EN-AMADO-UserGuide-8janv2021.pdf'
 		};
 
-
 		function setLanguage(lang) {
+			setLanguageEx(lang);
+			_paq.push(['trackEvent', 'General', 'Choose Language', 'Choose Language ' + lang]);
+		}
+		
+		function setLanguageEx(lang) {
+
 			jQuery.i18n.properties({
 				name: 'Messages', 
 				path: 'lang/', 
@@ -67,13 +72,29 @@
 		
 		function init() {
 			language = $.cookie('language') || 'en';			
-			setLanguage(language);
+			setLanguageEx(language);
 		}
 		
 		
-	</script>
-
-    <!-- Custom styles for this template -->
+	</script>	
+    
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//paris-timemachine.huma-num.fr/matomo/";
+    
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '2']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+    
   </head>
   
   
@@ -102,7 +123,9 @@
 		</table>
 		
 		<div style="position:relative;margin-top:10px;text-align:center;width:200px">
-			<a id="menu_help_userguide_href" href="" target="_blank">
+			<a id="menu_help_userguide_href" href="" target="_blank"
+				onclick="_paq.push(['trackEvent', 'General', 'User guide', hrefs[language]]);">
+
 				<img src="icon/userguide.png?12112020">
 
 				<div style="position:absolute;top:50%;left:62%;transform:translate(-50%,-50%);width:75%">
@@ -114,15 +137,21 @@
 		<div id="submenu">
 			<table>
 				<tr>
-					<td><a href="help/EN-AMADO-UserGuide-8janv2021.pdf" target="_blank"><span class="translatable" id="index_english">English</span></a></td>
+					<td><a href="help/EN-AMADO-UserGuide-8janv2021.pdf" target="_blank" 
+								onclick="_paq.push(['trackEvent', 'General', 'User guide', 'help/EN-AMADO-UserGuide-8janv2021.pdf']);">
+						<span class="translatable" id="index_english">English</span></a>
+					</td>
 
-					<td><a href="help/Fr-Guide-AMADO-8janv2021.pdf" target="_blank"><span class="translatable" id="index_french">French</span></a></td>
+					<td><a href="help/Fr-Guide-AMADO-8janv2021.pdf" target="_blank"
+								onclick="_paq.push(['trackEvent', 'General', 'User guide', 'help/Fr-Guide-AMADO-8janv2021.pdf']);">
+						<span class="translatable" id="index_french">French</span></a>
+					</td>
 				</tr>
 			</table>
 		</div>
 
 		<div style="position:relative;margin-top:10px;text-align:center;width:200px">
-			<a target="_self" href="main.html">
+			<a target="_self" href="main.html" onclick="_paq.push(['trackEvent', 'General', 'Start', 'Start ' + language]);">
 				<img src="icon/start.png?12112020" style="width:200px;">
 				<div style="position:absolute;top:50%;left:62%;transform:translate(-50%,-50%);width:75%">
 					<span class="translatable" id="index_start" style="font-family:Arial, Helvetica, sans-serif;font-weight:bold;font-size:14;color:white">Start</span>
@@ -138,13 +167,13 @@
 				</tr>					
 				<tr>
 					<td>
-						<video width="213" height="160" controls>
+						<video width="213" height="160" controls onplay="_paq.push(['trackEvent', 'General', 'Video', 'video/EN-AMADO-online_8-Jan-2020.mp4']);">
 							<source src="video/EN-AMADO-online_8-Jan-2020.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 					</td>
 					<td>
-						<video width="213" height="160" controls>
+						<video width="213" height="160" controls onplay="_paq.push(['trackEvent', 'General', 'Video', 'video/Fr-AMADO-online_8-Jan-2020.mp4']);">
 							<source src="video/Fr-AMADO-online_8-Jan-2020.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
