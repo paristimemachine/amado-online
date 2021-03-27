@@ -31,7 +31,7 @@
 	<script src="table-export.js?20200925"></script>
 	<script src="hc.js?20200925"></script>
 	<script src="hc-export.js?20200925"></script>
-	<script src="callback.js?20211001" crossorigin="anonymous"></script>
+	<script src="callback.js?20210327" crossorigin="anonymous"></script>
 	<script src="utility.js?20200925" crossorigin="anonymous"></script>
 	<script src="undo.js?20200925" crossorigin="anonymous"></script>
 	<script>
@@ -75,7 +75,7 @@
 		function init() {
 			language = $.cookie('language') || 'en';
 			
-			setLanguage(language);
+			setLanguageEx(language);
 			
 			table = new Table(10, 5);
 			table.mode = 6;
@@ -853,6 +853,12 @@
 						<img id="image_vi" class="languageGroup" src="icon/blank.png" style="width:1rem;"/>
 						<img src="icon/vi.png"style="width:16px;"/>
 						<span class="nontranslatable" id="menu_language_vietnamese">Tiếng Việt</span>
+					</a>
+
+					<a class="dropdown-item checkable" href="javascript:setLanguage('zh');">
+						<img id="image_zh" class="languageGroup" src="icon/blank.png" style="width:1rem;"/>
+						<img src="icon/zh.png"style="width:16px;"/>
+						<span class="nontranslatable" id="menu_language_chinese">中文</span>
 					</a>
 		  		</div>
 			</li>

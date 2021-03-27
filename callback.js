@@ -288,10 +288,16 @@ const hrefs = {
 	'it': 'help/Fr-Guide-AMADO-8janv2021.pdf',
 	'ru': 'help/Fr-Guide-AMADO-8janv2021.pdf',
 	'uk': 'help/Fr-Guide-AMADO-8janv2021.pdf',
-	'vi': 'help/EN-AMADO-UserGuide-8janv2021.pdf'
+	'vi': 'help/EN-AMADO-UserGuide-8janv2021.pdf',
+	'zh': 'help/EN-AMADO-UserGuide-8janv2021.pdf'
 };
 
 function setLanguage(lang) {
+	setLanguageEx(lang);
+	_paq.push(['trackEvent', 'General [main]', 'Choose Language [main]', 'Choose Language [main] ' + lang]);
+}
+
+function setLanguageEx(lang) {
 	jQuery.i18n.properties({
 		name: 'Messages', 
 		path: 'lang/', 
