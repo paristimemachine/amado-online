@@ -156,7 +156,7 @@ function HierarchicalClustering(demandeur, transposed, nType) {
 					'left': 0,
 					'right': 0,
 					'parent': 0,
-					'n': 1,
+					'n': weight[i],		//KHANG 20/03/2022: instead of 1
 					'level': 0
 			};
 			nodes['#' + i] = node;
