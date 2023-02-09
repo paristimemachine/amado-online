@@ -540,6 +540,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					//ctx.fillStyle = this.graphColor;
 					//ctx.fillRect(rect.left, rect.top, rect.width, rect.height);
@@ -559,6 +562,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					ctx.fillStyle = this.graphColor;
 					ctx.fillRect(rect.left, rect.top, rect.width, rect.height);
@@ -578,6 +584,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					if (this.value(i, j) > mean) {
 						ctx.fillStyle = this.graphColor;
@@ -603,6 +612,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					if (this.value(i, j) > mean) {
 						ctx.fillStyle = this.graphColor;
@@ -631,6 +643,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					if (this.value(i, j) > mean) {
 						ctx.fillStyle = this.graphColor;
@@ -659,6 +674,9 @@ function Table(row, col) {
 
 				for (var j = 0; j < this.nb_col; j++) {
 					var rect = this.rect(i, j);
+
+					if (this.value(i, j) == 0)
+						continue; //ignore empty rectangles
 									
 					if (this.value(i, j) > mean) {
 						ctx.fillStyle = this.graphColor;
