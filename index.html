@@ -21,6 +21,13 @@
 		    padding:0 10px;
 		}
 	</style>
+
+	<!-- add security add-on for jquery / july 2023 -->
+	<script>
+		jQuery.htmlPrefilter = function( html ) {
+     		return html;
+		};
+	</script>
 	
 	<script>
 		$.ajaxSetup({ cache: false });

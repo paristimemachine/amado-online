@@ -34,6 +34,14 @@
 	<script src="callback.js?20210327" crossorigin="anonymous"></script>
 	<script src="utility.js?20200925" crossorigin="anonymous"></script>
 	<script src="undo.js?20200925" crossorigin="anonymous"></script>
+
+	<!-- add security add-on for jquery / july 2023 -->
+	<script>
+		jQuery.htmlPrefilter = function( html ) {
+     		return html;
+		};
+	</script>
+
 	<script>
 		$.ajaxSetup({ cache: false });
 		var table;
