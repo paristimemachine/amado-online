@@ -102,10 +102,15 @@
 			table.rowLegendFontSize = 18;
 			table.columnLegendFontSize = 18;
 
-			if (language == 'en')
+			const text = (new URLSearchParams(window.location.search)).get('table');
+			if (text != null && table.parseTable(text)) {
+				table.remove_hc();
+				doLayout(window.innerWidth * 0.8, window.innerHeight * 0.8);
+			} else if (language == 'en')
 				loadSample('en06-paris.txt');
 			else
 				loadSample('fr06-paris.txt');
+
 
 			$(window).resize(function() {
 				doLayout(window.innerWidth * 0.8, window.innerHeight * 0.8);
@@ -132,6 +137,12 @@
 				
 				clipboardData.setData('Text', table.toString());
 				event.preventDefault();
+
+				//const currentURL = window.location.href;
+				// Remove parameters, if any
+				//const baseURL = currentURL.split('?')[0];
+				//const url = baseURL + '?table=' + encodeURIComponent(table.toString());
+				//clipboardData.setData('Text', url);
 			}
 
 			$('#SetTitleDialog').on('show.bs.modal', function (event) {
