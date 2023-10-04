@@ -1,11 +1,11 @@
 # AMADO online
 
 ### Description
-An online version of "Analyse graphique d'une MAtrice de DOnnées". AMADO online was developed in conjunction with the consortium PTM (previously [Paris Time Machine](https://paris-timemachine.huma-num.fr/){target="_blank"} then [Projets Time Machine](https://ptm.huma-num.fr/){target="_blank"} since 2023) of [Huma-Num](https://www.huma-num.fr/){target="_blank"} (a very large research infrastructure of digital humanities) in collaboration with Jean-Hugues Chauchat (Université Lumière Lyon2) and Alban Risson (ALSON Company).
+An online version of "Analyse graphique d'une MAtrice de DOnnées". AMADO online was developed in conjunction with the consortium PTM (previously [Paris Time Machine](https://paris-timemachine.huma-num.fr/) then [Projets Time Machine](https://ptm.huma-num.fr/) since 2023) of [Huma-Num](https://www.huma-num.fr/) (a very large research infrastructure of digital humanities) in collaboration with Jean-Hugues Chauchat (Université Lumière Lyon2) and Alban Risson (ALSON Company).
 
-AMADO online is available at [https://app.ptm.huma-num.fr/amado/](https://app.ptm.huma-num.fr/amado/){target="_blank"}
+AMADO online is available at [https://app.ptm.huma-num.fr/amado/](https://app.ptm.huma-num.fr/amado/).
 
-AMADO online documentation is available at [https://doc.ptm.huma-num.fr/amado/](https://doc.ptm.huma-num.fr/amado/){target="_blank"}
+AMADO online documentation is available at [https://doc.ptm.huma-num.fr/amado/](https://doc.ptm.huma-num.fr/amado/).
 
 ### Author / Developer
 - Nguyen-Khang PHAM, Can Tho University, Viet Nam
