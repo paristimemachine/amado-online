@@ -48,6 +48,7 @@
 		var left_margin = 0;
 		var top_margin  = 56;
 		var language;
+		const AMADO_LANGUAGES = ['en', 'es', 'fr', 'it', 'ru', 'tr', 'uk', 'vi', 'zh'];		
 		
 		function sync_get(file, func) {
 			$.ajax({
@@ -79,9 +80,18 @@
 				alert("Error in pasting");
 			}
 		}
-		
-		function init() {
-			language = $.cookie('language') || 'en';
+
+		function getURLLanguageParam() {
+			let lang = new URLSearchParams(window.location.search).get('lang');
+			if (lang !== null) {
+				lang = String(lang);
+				if (AMADO_LANGUAGES.indexOf(lang) > -1) return lang;
+			}
+			return 'en';
+		}
+
+		function init() {                        
+			language = getURLLanguageParam() || $.cookie('language') || 'en';
 			
 			setLanguageEx(language);
 			
