@@ -85,13 +85,17 @@
 			let lang = new URLSearchParams(window.location.search).get('lang');
 			if (lang !== null) {
 				lang = String(lang);
-				if (AMADO_LANGUAGES.indexOf(lang) > -1) return lang;
+				if (AMADO_LANGUAGES.indexOf(lang) > -1) {
+					$.cookie('language', lang);
+					return lang;
+				}
 			}
 			return 'en';
 		}
 
-		function init() {                        
-			language = $.cookie('language') || getURLLanguageParam() || 'en';
+		function init() {
+			getURLLanguageParam();
+			language = $.cookie('language') || 'en';
 			
 			setLanguageEx(language);
 			
