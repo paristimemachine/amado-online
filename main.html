@@ -91,7 +91,7 @@
 		}
 
 		function init() {                        
-			language = getURLLanguageParam() || $.cookie('language') || 'en';
+			language = $.cookie('language') || getURLLanguageParam() || 'en';
 			
 			setLanguageEx(language);
 			
